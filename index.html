@@ -103,7 +103,7 @@ function renderSelect(){
 
 function showTeam(name){
  let players = formations[name];
- let html = `<div class='pitch'>`;
+ let html = '';;
  players.forEach((p,i)=>{
   html+=`<div class='card-wrap' style='left:${p.x}%;top:${p.y}%;'>
     <div class='card' onclick='flipCard(this)'>
@@ -119,7 +119,6 @@ function showTeam(name){
     </div>
   </div>`;
  });
- html+='</div>';
  document.getElementById('pitch').innerHTML=html;
 }
 
